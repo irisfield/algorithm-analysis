@@ -84,7 +84,11 @@ public class SortDriver {
 
     return arr;
   }
-
+  
+  /**
+   * Run tests based on arguments.
+   * @return testTime The times it took each algorithm to sort the given arrays.
+   */
   public TestTimes runSort(SortType sortType, ArrayType arrayType, int arraySize, int numberOfTimes) {
     BubbleSort bubble = new BubbleSort();
     SelectionSort selection = new SelectionSort();
