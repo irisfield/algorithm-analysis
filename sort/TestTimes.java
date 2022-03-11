@@ -1,5 +1,6 @@
 public class TestTimes {
 
+  private final int MAX_TESTS = 10;
   /*
    * 1 microsecond = 1000¹ nanoseconds
    * 1 millisecond = 1000² nanoseconds
@@ -10,20 +11,17 @@ public class TestTimes {
   public final double microsecond = 1000;
   public final double millisecond = microsecond * microsecond;
   public final double second = millisecond * microsecond;
-
   /*
    * Note that in binary (base 2):
    * 1 kilobyte = 1024¹ bytes
    * 1 megabyte = 1024² bytes
    * 1 gigabyte = 1024³ bytes
    *
-   * Use this value as the denominator to convert to target time unit.
+   * Use this value as the denominator to convert to target memory unit.
    */
   public final double kilobyte = 1024;
   public final double megabyte = kilobyte * kilobyte;
   public final double gigabyte = megabyte * kilobyte;
-
-  private final int MAX_TESTS = 10;
 
   private long[] testTimes;
   private long[] memUsage;
