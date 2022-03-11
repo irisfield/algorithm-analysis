@@ -1,5 +1,7 @@
 # Performance Analysis of Bubble, Insertion, and Selection Sort
 
+## Work in progress. Please check again tomorrow for finish product.
+
 The data consists of the following columns:
 - `SortType` - The sorting algorithm: bubble sort, selection sort, insertion sort.
 - `ArrayType` - The integer array type used during the test. 
