@@ -1,6 +1,6 @@
 # Performance Analysis of Bubble, Insertion, and Selection Sort
 
-## Work in progress. Please check again tomorrow for finish product.
+## Work in progress. Please check again tomorrow for the finished product.
 
 The data consists of the following columns:
 - `SortType` - The sorting algorithm: bubble sort, selection sort, insertion sort.
