@@ -6,7 +6,7 @@ The data consists of the following columns:
 - `ArrayType` - The integer array type used during the test. 
     - `Random` - As the name implies, the integers in the array were in random order.
     - `Increasing` - The integers in the array were in ascending order.
-    - `IncreasingAndRandom` - 90% of the integers were in ascending order, and the remaining in random order.
+    - `IncreasingAndRandom` - 90% of the integers were ascending order, and 10% in random order.
     - `Decreasing` - The integers in the array were in descending order.
     - `Equal` - The integers in the array were all the same.
 - `ArraySize` - The size of the array used during the test.
