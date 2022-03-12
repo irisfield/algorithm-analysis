@@ -19,4 +19,4 @@ The data consists of the following columns:
 - `MemoryUsage` - The average memory usage.
 
 ### Tests
-The code I wrote for to perform the tests are inside the `sort` directory. The algorithms are located in the `sort/algorithm` directory. The `SortDriver` class performs the actual tests and writes a nicely formatted CSV file of the test times. The `TestTime` class is used by the `SortDriver` to store the test times.
+The code I wrote to perform the tests are inside the `sort` directory. The algorithms are located in the `sort/algorithm` directory. The `SortDriver` class performs the tests and writes a nicely formatted CSV file of the test times. The `TestTime` class is used by the `SortDriver` to store the test times.
