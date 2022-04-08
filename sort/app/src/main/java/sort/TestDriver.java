@@ -131,7 +131,7 @@ public class TestDriver {
 
   public static void main(String[] args) throws IOException {
     TestDriver driver = new TestDriver();
-    int[] arraySizes = { 10000, 25000 };
+    int[] arraySizes = { 10_000, 25_000, 50_000, 100_000 };
     PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter("sort_tests.csv")));
 
     int runs = 9;
