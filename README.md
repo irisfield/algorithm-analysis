@@ -17,6 +17,3 @@ The data consists of the following columns:
 - `Test`# - The time it took in **milliseconds** to sort the array.
 - `AverageTime` - The average time of all the tests.
 - `MemoryUsage` - The average memory usage.
-
-### Tests
-The algorithms are located inside the `sort/algorithm` directory. The `TestTime` class is used by the `SortDriver` to store the test times. The `SortDriver` class performs the tests and outputs a formatted CSV file of the test times, which is data used in this analysis.
