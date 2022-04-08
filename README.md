@@ -2,7 +2,7 @@
 
 ### Testing the Performance of Bubble, Insertion Sort, and Selection.
 The data consists of the following columns:
-- `SortType` - The sorting algorithm: bubble sort, selection sort, insertion sort.
+- `SortType` - The sorting algorithm type: bubble sort, selection sort, insertion sort.
 - `ArrayType` - The integer array type used during the test. 
     - `Random` - As the name implies, the integers in the array were in random order.
     - `Increasing` - The integers in the array were in ascending order.
