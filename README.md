@@ -2,7 +2,7 @@
 Analysis of the trends in the time performance of bubble, insertion and selection sort algorithms with different ordered data.
 
 # Data
-The tests were performed on my local computer and the results were written to a csv formatted file.
+The tests were performed on my local computer and the results were written to a csv formatted file. The data does not need cleaning.
 
 The data consists of the following columns:
 - `SortType` - The sorting algorithm type: bubble sort, selection sort, insertion sort.
