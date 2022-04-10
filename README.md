@@ -1,5 +1,5 @@
 # Description
-This project examines general trends in the time performance of bubble, insertion and selection sort algorithms with different ordered data.
+The goal of this project is to examine general trends in the time performance of bubble, insertion and selection sort when sorting data different ordered data.
 
 # About the Data
 The data consists of the following columns:
