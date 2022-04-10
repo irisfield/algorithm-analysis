@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 
-import sort.TestMetric.MemoryUnit;
 import sort.TestMetric.TimeUnit;
 
 public class TestDriver {
@@ -104,7 +103,7 @@ public class TestDriver {
    */
   public TestMetric runSort(SortType sortType, ArrayType arrayType, int arraySize, int numberOfTimes) {
     SortingAlgorithm sort = new SortingAlgorithm();
-    TestMetric testMetric = new TestMetric(TimeUnit.MILLISECONDS, MemoryUnit.KILOBYTES);
+    TestMetric testMetric = new TestMetric(TimeUnit.MILLISECONDS);
 
     for (int i = 0; i < numberOfTimes; i++) {
       switch (sortType) {
