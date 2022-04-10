@@ -30,9 +30,12 @@ public class TestDriver {
   }
 
   /**
-   * Create an array based on <b>ArrayType</b> and <b>arraySize<b>.
+   * Use this method to create an array based the given size and data order.
    *
-   * @return arr A populated integer array.
+   * @param arrayType The order of the data to use for created array. Refer to {@link ArrayType}.
+   * @param arraySize The size of the array of the created array.
+   *
+   * @return arr A populated integer array of size <b>arraySize</b> in <b>arrayType</b> order.
    */
   public Integer[] createArray(ArrayType arrayType, int arraySize) {
     Integer[] arr = new Integer[arraySize];
@@ -86,13 +89,22 @@ public class TestDriver {
   }
 
   /**
-   * Run tests based on arguments.
+   * Use this method to perform the sorting tests based on the specified
+   * parameters.
    *
-   * @return testMetric Array containing all the test times and memory usages.
+   * @param sortType      The sorting algorithm to use for the test. Refer to
+   *                      {@link SortType}.
+   * @param arrayType     The initial order of the data to use for sort. Refer to
+   *                      {@link ArrayType}.
+   * @param arraySize     The size of the array to use for the sort.
+   * @param numberOfTimes The number of times to repeat test.
+   *
+   * @return testMetric A {@link TestMetric} array containing the test times for
+   *         all the tests.
    */
   public TestMetric runSort(SortType sortType, ArrayType arrayType, int arraySize, int numberOfTimes) {
     SortingAlgorithm sort = new SortingAlgorithm();
-    TestMetric testMetric = new TestMetric(TimeUnit.MILLISECONDS, MemoryUnit.MEGABYTES);
+    TestMetric testMetric = new TestMetric(TimeUnit.MILLISECONDS, MemoryUnit.KILOBYTES);
 
     for (int i = 0; i < numberOfTimes; i++) {
       switch (sortType) {
@@ -148,8 +160,7 @@ public class TestDriver {
         "Test7,",
         "Test8,",
         "Test9,",
-        "AverageTime,",
-        "MemoryUsage\n",
+        "AverageTime\n",
     };
 
     for (String category : categories) {
@@ -160,18 +171,19 @@ public class TestDriver {
       for (ArrayType arrayType : ArrayType.values()) {
         for (int arraySize : arraySizes) {
 
+          /**********************************************
+           * WRITE TEST RESULTS TO CSV A FORMATTED FILE *
+           **********************************************/
           TestMetric tests = driver.runSort(sortType, arrayType, arraySize, runs);
           long[] times = tests.getTestTimes();
 
           writer.write(String.format("%s,%s,%d,", sortType, arrayType, arraySize));
 
           for (int i = 0; i < runs; i++) {
-            System.out.println(times[i]);
             writer.write(String.format("%.6s,", (times[i])));
           }
 
-          writer.write(String.format("%.6s,", (tests.getAverageTime())));
-          writer.write(String.format("%.5s\n", (tests.getAverageMemory())));
+          writer.write(String.format("%.6s\n", (tests.getAverageTime())));
 
         }
       }
