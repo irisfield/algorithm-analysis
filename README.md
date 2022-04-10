@@ -19,4 +19,4 @@ The data consists of the following columns:
     - `100000` - The array contained 100,000 elements.
 - `Test`# - The time it took in **milliseconds** to sort the array.
 - `AverageTime` - The average time of all the tests.
-- `MemoryUsage` - The average memory usage.
+- `MemoryUsage` - The average memory usage in megabytes.
