@@ -16,4 +16,4 @@ The data consists of the following columns:
     - `50000` - The array contained 50,000 integers.
     - `100000` - The array contained 100,000 integers.
 - `Test`# - The time it took in milliseconds to sort the array.
-- `AverageTime` - The average of all all the test times in milliseconds.
+- `AverageTime` - The average of all the test times in milliseconds.
